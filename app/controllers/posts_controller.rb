@@ -19,6 +19,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
+    # byebug
     params.require(:post).permit(:title, :content, category_ids:[], categories_attributes: [:name])
   end
 end
