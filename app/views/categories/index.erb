@@ -1,0 +1,6 @@
+<h1>All categories</h1>
+<h3>Make new category: <%= button_to "Create", "categories/new", method: :get  %></h3>
+
+<% @categories.each do |cat| %>
+  <p><%= cat.name %></p>
+<% end %>
